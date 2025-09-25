@@ -1,0 +1,35 @@
+<svg width="75" height="75" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Icon representing randomness, styled as a six-sided die. -->
+    <g transform="rotate(15 50 50) scale(0.8)">
+        <!-- Main body of the die with a gradient for depth -->
+        <path d="M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z" fill="url(#dieGradient)" stroke="#E0E0E0" stroke-width="2"/>
+        
+        <!-- Lines to give the 3D cube effect -->
+        <path d="M5 27.5 L50 50 L95 27.5 M50 50 L50 95" stroke="#E0E0E0" stroke-width="2"/>
+
+        <!-- Pips (dots) on the die faces -->
+        <!-- Face with 1 pip (top) -->
+        <circle cx="50" cy="30" r="4.5" fill="#FFFFFF"/>
+        
+        <!-- Face with 3 pips (left) -->
+        <circle cx="27" cy="45" r="4.5" fill="#FFFFFF"/>
+        <circle cx="38" cy="59" r="4.5" fill="#FFFFFF"/>
+        <circle cx="16" cy="31" r="4.5" fill="#FFFFFF" opacity="0.7"/>
+
+        <!-- Face with 5 pips (right) -->
+        <circle cx="73" cy="45" r="4.5" fill="#FFFFFF"/>
+        <circle cx="84" cy="31" r="4.5" fill="#FFFFFF" opacity="0.7"/>
+        <circle cx="62" cy="31" r="4.5" fill="#FFFFFF" opacity="0.7"/>
+        <circle cx="62" cy="59" r="4.5" fill="#FFFFFF"/>
+        <circle cx="84" cy="59" r="4.5" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Gradient Definition -->
+    <defs>
+        <linearGradient id="dieGradient" x1="50" y1="5" x2="50" y2="95" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F46E5"/> <!-- Indigo-600 -->
+            <stop offset="1" stop-color="#312E81"/> <!-- Indigo-800 -->
+        </linearGradient>
+    </defs>
+</svg>
+
