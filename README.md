@@ -1,48 +1,33 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+# Node Gerador de Números Aleatórios Reais para n8n
 
-# n8n-nodes-starter
+![Ícone de um dado de seis lados](https://github.com/user-attachments/assets/be40f486-8162-4b14-8a72-e2d4aaad50b6)
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](https://n8n.io). It includes the node linter and other dependencies.
+Este é um node customizado para n8n que gera um número inteiro aleatório real utilizando a API do [RANDOM.ORG](https://www.random.org). Ele fornece um número aleatório criptograficamente seguro, que é muito mais forte que os números pseudoaleatórios normalmente gerados por computadores.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+## Funcionalidades
 
-If you would like your node to be available on n8n cloud you can also [submit your node for verification](https://docs.n8n.io/integrations/creating-nodes/deploy/submit-community-nodes/).
+* Busca um número inteiro aleatório entre um valor mínimo e máximo definido pelo usuário.
+* Utiliza a API do RANDOM.ORG para aleatoriedade real.
+* Entrada simples e saída clara para fácil integração em qualquer workflow.
 
-## Prerequisites
+## Resumo do Projeto: Desenvolvimento de Node Customizado para n8n
 
-You need the following installed on your development machine:
+Desenvolvi um node customizado de ponta a ponta para a plataforma de automação n8n. O projeto consistiu em criar uma integração com a API RANDOM.ORG para gerar números aleatórios reais.
 
-* [git](https://git-scm.com/downloads)
-* Node.js and npm. Minimum version Node 20. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
-  npm install n8n -g
-  ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+Minhas responsabilidades do desenvolvimento:
 
-## Using this starter
+    Pesquisa e Estruturação: Realizei a pesquisa inicial para entender a arquitetura de nodes do n8n e estruturei o projeto com todos os arquivos de configuração necessários, como package.json e tsconfig.json.
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+    Desenvolvimento: Codifiquei toda a lógica do node em TypeScript, incluindo a implementação das chamadas à API externa para buscar os dados.
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
-   ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
-   ```
-3. Run `npm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `npm run lint` to check for errors or `npm run lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+## Habilidades e Aprendizados
 
-## More information
+Este projeto foi fundamental para adquirir novas competências técnicas:
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+    Desenvolvimento para n8n: Aprendi com o processo de criação de nodes customizados, desde a configuração inicial até a execução e formatação da saída de dados.
 
-## License
+    TypeScript em um Cenário Real: Apliquei TypeScript para construir uma aplicação funcional, utilizando types para garantir a robustez do código.
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+    Docker e docker-compose: Ganhei experiência prática com o Docker para criar ambientes de desenvolvimento isolados, com foco especial na configuração de docker-compose e na depuração de problemas de mapeamento de volumes, uma habilidade avançada e crucial para ambientes de microsserviços.
+
+		Utilização e compreensão da documentação de TypeScript, Docker e n8n.
